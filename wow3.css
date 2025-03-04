@@ -1,0 +1,62 @@
+.middle {
+    display: flex;
+    flex-direction: column; /* Added to stack children vertically */
+    width: 100%;
+    height: 100vh; /* Fixed typo from 'heighT' to 'height' */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+}
+
+h1 {
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center text */
+}
+
+.bypassChoice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bypassChoice button {
+    cursor: pointer;
+}
+
+.bypassChoice button.bypass {
+    margin-right: 10px;
+    display: inline-block;
+    background: green;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 200px 200px;
+    border-radius: 5px;
+}
+
+.bypassChoice button.noBypass {
+    margin-right: 10px;
+    display: inline-block;
+    background: red;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 1px 5px;
+    border-radius: 5px;
+}
+
+.bypassChoice button.bypass, .bypassChoice button.noBypass {
+    border: 0;
+    outline: 0;
+    transition: all 0.3s;
+}
+
+.bypassChoice button.bypass:hover, .bypassChoice button.noBypass:hover {
+    color: #fff !important;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+                0 2px 2px rgba(0,0,0,0.11), 
+                0 4px 4px rgba(0,0,0,0.11), 
+                0 6px 8px rgba(0,0,0,0.11),
+                0 8px 16px rgba(0,0,0,0.11);
+}
+
+.bypassChoice button.bypass:active, .bypassChoice button.noBypass:active { 
+    box-shadow: none; 
+}
